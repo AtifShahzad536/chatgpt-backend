@@ -14,7 +14,7 @@ require('dotenv').config();
 
 const port = process.env.PORT || 3001;
 app.use(cors({
-    origin: 'http://localhost:5173', // Adjust this to your frontend URL
+    origin: 'https://chatgptultra.netlify.app', // Adjust this to your frontend URL
     credentials: true // Allow credentials (cookies, authorization headers, etc.)
 }));
 app.use(express.urlencoded({ extended: true }));
